@@ -60,9 +60,9 @@ public class Image2D extends BufferedImage
     
     public void drawCube(Cube c) {
         Graphics2D gimage = createGraphics();
-        gimage.setColor(Color.black);
+        gimage.setColor(Color.BLACK);
         gimage.fillRect(0, 0, getWidth(), getHeight());
-        gimage.setColor(Color.green);
+        gimage.setColor(Color.GREEN);
         
         Point p, q;
         for (int i=0; i<c.edges.length; i++) {

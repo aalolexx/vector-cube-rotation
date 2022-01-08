@@ -72,17 +72,17 @@ public class Cube
                 break;
             case "x":
                 for (int i=0; i<8; i++) {
-                    vertices[i] = Transformation.rotateX(vertices[i], r, alpha);
+                    vertices[i] = Transformation.rotateX(vertices[i], alpha);
                 }
                 break;
             case "y":
                 for (int i=0; i<8; i++) {
-                    vertices[i] = Transformation.rotateY(vertices[i], r, alpha);
+                    vertices[i] = Transformation.rotateY(vertices[i], alpha);
                 }
                 break;
             case "z":
                 for (int i=0; i<8; i++) {
-                    vertices[i] = Transformation.rotateZ(vertices[i], r, alpha);
+                    vertices[i] = Transformation.rotateZ(vertices[i], alpha);
                 }
                 break;
         }

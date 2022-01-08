@@ -2,10 +2,13 @@
 comment0.target=Transformation
 comment1.params=v\ r\ alpha
 comment1.target=double[]\ rotateR(double[],\ double[],\ double)
-comment2.params=v\ r\ alpha
-comment2.target=double[]\ rotateX(double[],\ double[],\ double)
-comment3.params=v\ r\ alpha
-comment3.target=double[]\ rotateY(double[],\ double[],\ double)
-comment4.params=v\ r\ alpha
-comment4.target=double[]\ rotateZ(double[],\ double[],\ double)
+comment2.params=v\ alpha
+comment2.target=double[]\ rotateX(double[],\ double)
+comment2.text=\r\n\ \ \ \ \ \ \ \ /\ 1\ \ \ 0\ \ \ \ \ \ 0\ \ \ \ \ \\\r\n\ Rx\ \=\ \ \ |\ 0\ cos(a)\ -sin(a)\ |\r\n\ \ \ \ \ \ \ \ \\\ 0\ sin(a)\ cos(a)\ \ /\r\n
+comment3.params=v\ alpha
+comment3.target=double[]\ rotateY(double[],\ double)
+comment3.text=\r\n\ \ \ \ \ \ \ \ /\ cos(a)\ \ 0\ \ sin(a)\ \\\r\n\ Ry\ \=\ \ \ |\ \ \ 0\ \ \ \ \ 1\ \ \ 0\ \ \ \ \ |\r\n\ \ \ \ \ \ \ \ \\\ -sin(a)\ 0\ \ cos(a)\ /\r\n
+comment4.params=v\ alpha
+comment4.target=double[]\ rotateZ(double[],\ double)
+comment4.text=\r\n\ \ \ \ \ \ \ \ /\ cos(a)\ -sin(a)\ 0\ \\\r\n\ Rz\ \=\ \ \ |\ sin(a)\ \ cos(a)\ 0\ |\r\n\ \ \ \ \ \ \ \ \\\ \ \ 0\ \ \ \ \ \ \ 0\ \ \ \ 1\ /\r\n
 numComments=5

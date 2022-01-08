@@ -58,16 +58,33 @@ public class Cube
     }
 
     //Hier kann auch eine andere Drehachse r gewählt werden!
-    public void rotateCube(double alpha) {
+    public void rotateCube(double alpha, String axis) {
         double[] r = new double[3];
         double n = 1.0/Math.sqrt(3);
         r[0] = n;
         r[1] = n;
         r[2] = n;
-        for (int i=0; i<8; i++) {
-            //vertices[i] = Transformation.rotate(vertices[i], r, alpha);
-            
-            vertices[i][2] += 0.1;
+        switch (axis) {
+            case "r":
+                for (int i=0; i<8; i++) {
+                    vertices[i] = Transformation.rotateR(vertices[i], r, alpha);
+                }
+                break;
+            case "x":
+                for (int i=0; i<8; i++) {
+                    vertices[i] = Transformation.rotateX(vertices[i], r, alpha);
+                }
+                break;
+            case "y":
+                for (int i=0; i<8; i++) {
+                    vertices[i] = Transformation.rotateY(vertices[i], r, alpha);
+                }
+                break;
+            case "z":
+                for (int i=0; i<8; i++) {
+                    vertices[i] = Transformation.rotateZ(vertices[i], r, alpha);
+                }
+                break;
         }
     }
 }

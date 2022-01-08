@@ -2,6 +2,6 @@
 comment0.target=Cube
 comment1.params=
 comment1.target=Cube()
-comment2.params=alpha
-comment2.target=void\ rotateCube(double)
+comment2.params=alpha\ axis
+comment2.target=void\ rotateCube(double,\ java.lang.String)
 numComments=3

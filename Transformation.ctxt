@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.target=Transformation
 comment1.params=v\ r\ alpha
-comment1.target=double[]\ rotate(double[],\ double[],\ double)
-numComments=2
+comment1.target=double[]\ rotateR(double[],\ double[],\ double)
+comment2.params=v\ r\ alpha
+comment2.target=double[]\ rotateX(double[],\ double[],\ double)
+comment3.params=v\ r\ alpha
+comment3.target=double[]\ rotateY(double[],\ double[],\ double)
+comment4.params=v\ r\ alpha
+comment4.target=double[]\ rotateZ(double[],\ double[],\ double)
+numComments=5

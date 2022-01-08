@@ -42,7 +42,10 @@ public class ImageViewer
         imagePanel.addKeyListener(new KeyListener() {
             public void keyReleased(KeyEvent e) {}
             public void keyPressed(KeyEvent e) {
-                if  (e.getKeyCode()==32) {
+                if  (e.getKeyCode() == 32 // space
+                    || e.getKeyCode() == 88 // x
+                    || e.getKeyCode() == 89 // y
+                    || e.getKeyCode() == 90) { // z
                     animationStop = !animationStop;
                     if (animator==null) {
                         animator = new Thread(new Runnable() {
@@ -50,7 +53,20 @@ public class ImageViewer
                                 int i = 0;
                                 double alpha = 2.0*Math.PI/360.0;
                                 while (!animationStop) {
-                                    c.rotateCube(alpha);
+                                    switch (e.getKeyCode()) {
+                                        case 32:
+                                            c.rotateCube(alpha, "r");
+                                            break;
+                                        case 88:
+                                            c.rotateCube(alpha, "x");
+                                            break;
+                                        case 89:
+                                            c.rotateCube(alpha, "y");
+                                            break;
+                                        case 90:
+                                            c.rotateCube(alpha, "z");
+                                            break;
+                                    }
                                     currentImage.drawCube(c);
                                     imagePanel.setImage(currentImage);
                                     try {

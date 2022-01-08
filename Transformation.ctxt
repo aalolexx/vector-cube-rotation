@@ -2,6 +2,7 @@
 comment0.target=Transformation
 comment1.params=v\ r\ alpha
 comment1.target=double[]\ rotateR(double[],\ double[],\ double)
+comment1.text=\r\n\ \ \ \ \ \ \ \ /\ ...\ \\\r\n\ Rr\ \=\ \ \ |\ ...\ |\r\n\ \ \ \ \ \ \ \ \\\ ...\ /\r\n
 comment2.params=v\ alpha
 comment2.target=double[]\ rotateX(double[],\ double)
 comment2.text=\r\n\ \ \ \ \ \ \ \ /\ 1\ \ \ 0\ \ \ \ \ \ 0\ \ \ \ \ \\\r\n\ Rx\ \=\ \ \ |\ 0\ cos(a)\ -sin(a)\ |\r\n\ \ \ \ \ \ \ \ \\\ 0\ sin(a)\ cos(a)\ \ /\r\n
